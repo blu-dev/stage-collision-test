@@ -1,9 +1,8 @@
 use bevy::{ecs::query::WorldQuery, prelude::*};
-use parry2d::na::{Isometry2, SimdPartialOrd, Vector2};
-use parry2d::shape::{Cuboid, RoundCuboid, Segment, Shape};
+use parry2d::na::{Isometry2, Vector2};
+use parry2d::shape::{Cuboid, RoundCuboid, Segment};
 
 use crate::{
-    input::{ButtonBitflags, MappedInput},
     kinetic::{AirdodgeEnergy, ControllerEnergy, GravityEnergy},
     states::{State, StateQuery},
     Collider, Location, StageCollision,
