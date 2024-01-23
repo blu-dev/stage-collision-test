@@ -12,6 +12,7 @@ bitflags::bitflags! {
 #[derive(Component)]
 pub enum PlayerHandle {
     Keyboard,
+    #[allow(dead_code)]
     Gamepad(Gamepad),
 }
 
